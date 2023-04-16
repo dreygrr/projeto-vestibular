@@ -1,0 +1,26 @@
+h4 {
+    color: var(--color-titulo);
+}
+
+
+main {
+    font-size: 24px;
+}
+
+
+
+section.contato {
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    min-height: 75vh;
+}
+
+
+
+section.contato .outros {
+    margin-top: 40px;
+
+}
+
+section.contato .outros ul {
+    list-style-type: none;
+}

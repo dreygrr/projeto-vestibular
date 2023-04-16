@@ -1,0 +1,219 @@
+/* CSS da página de login */
+
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    
+    font-size: large;
+}
+
+
+
+section.login{
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+
+    /* background-image: url("https://images.unsplash.com/photo-1533478684236-61e1192879e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80"); */
+    background: linear-gradient(90deg, var(--color-purple3) 0%, var(--color-gray4) 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*
+section.login div.box{
+    width: 95%;
+    max-width: 400px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--color-white);
+
+    padding: 20px 10px;
+}
+
+div.box h1{
+    font-size: 200%;
+
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+div.box p{
+    max-width: 300px;
+
+    margin: 0 auto 10px;
+    padding: 2px;
+
+    background-color:  var(--color-red);
+    text-align: center;
+}
+
+div.box form{
+    display: block;
+    margin: 0 auto;
+    
+    width: 100%;
+
+    text-align: center;
+}
+
+form input,
+form select{
+    width: 100%;
+
+    padding: 10px 5px 10px 15px;
+    margin-top: 10px;
+
+    background: var(--color-white);
+
+    border: 0;
+    border-radius: 20px;
+    
+    outline: none;
+}
+
+form a{
+    display: block;
+
+    color: var(--color-white);
+
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+form button{
+    width: 100%;
+
+    border: 0;
+    border-radius: 10px;
+
+    margin-top: 30px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    background-color: #F7DD68;
+    color: var(--color-black);
+
+    transition: background 0.2s;
+}
+
+form button:hover{
+    background-color: #FABC20;
+}
+*/
+
+
+
+section.login div.box {
+    position: relative;
+    width: 45%;
+    padding: 40px;
+
+    border-radius: 30px;
+
+    background-color: var(--color-white);
+
+    box-shadow:  0 25px 50px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+section.login div.box a.logo {
+    position: absolute;
+    top: 20px; left: 20px;
+    width: 40px;
+}
+
+
+
+section.login div.box h1 {
+    color: var(--color-titulo);
+}
+
+
+
+section.login label {
+    display: block;
+    width: 100%;
+}
+
+
+
+section.login .linha {
+    margin: 15px 0;
+}
+section.login .field input {
+    margin: 5px 0;
+}
+
+
+
+section.login input.informacoes {
+    width: 100%;
+    padding: 8px;
+    
+    border-radius: 15px;
+
+    background-color: var(--color-light-gray);
+    transition: .1s;
+}
+section.login input.informacoes:hover, section.login input.informacoes:focus {
+    background-color: var(--color-lighter-gray);
+}
+
+
+
+section.login button {
+    border: none;
+    background-color: var(--botao-azul-fora); color: var(--botao-azul-dentro);
+
+    padding: 8px; min-width: 150px;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+section.login button:hover {
+    background-color: var(--botao-azul-hover);
+}
+
+
+
+.botao-login-container {
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+
+.help-links {
+    text-align: center;
+}
+
+
+
+.erro {
+    width: max-content; margin: 0 auto 15px auto;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    /* background-color: var(--color-red3); color: var(--color-white); */
+    background-color: var(--color-red2); color: var(--color-white);
+
+    box-shadow:  0 10px 20px 0 var(--color-red-tsp2);
+}
+
+
+
+@media screen and (max-width: 875px){
+    section.login div.box {
+        min-width: 66%;
+    }
+}

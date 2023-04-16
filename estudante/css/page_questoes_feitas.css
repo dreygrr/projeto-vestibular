@@ -1,0 +1,91 @@
+p.total {
+    width: max-content;
+    padding: 10px 20px;
+    margin: 15px auto;
+
+    font-weight: 700;
+
+    border-radius: 15px;
+    background: linear-gradient(45deg, var(--color-blue8) 0, var(--color-blue9) 100%);
+    color: var(--color-white);
+
+    box-shadow:  0 10px 30px 0 var(--color-blue9);
+}
+
+
+
+section.content div.dados-questoes {
+    display: flex; justify-content: center;
+    padding-bottom: 45px;
+    overflow-y: hidden;
+}
+
+
+
+div.dados-questoes div.temas_p_materia {
+    width: 50%;
+    min-height: max-content;
+    max-height: 33vh;
+    margin: 30px 15px;
+
+    border-radius: 12px;
+}
+
+
+div.temas_p_materia h4 {
+    padding: 5px 10px;
+
+    font-size: 24px;
+    font-weight: 800;
+
+    border-radius: 15px 15px 0 0;
+
+    background-color: var(--color-gray5);
+    color: var(--color-white);
+}
+
+
+
+div.temas_p_materia ul {
+    max-height: 33vh;
+
+    list-style-type: none;
+    border-radius: 0 0 0 15px;
+    border: 1px solid var(--color-gray);
+    overflow-y: scroll;
+}
+
+div.temas_p_materia li.temas {  
+    padding: 10px;
+    /* border-radius: 20px; */
+    /* border: 2px solid var(--color-purple3); */
+    /* text-align: center; */
+
+    /* background-color: var(--color-purple5); */
+}
+
+/* div.temas_p_materia li.temas+li.temas{
+    margin-left: 10px;
+} */
+
+
+
+div.box-content a.botao {
+    display: block;
+
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    section.content div.dados-questoes {
+        flex-direction: column;
+    }
+
+
+    div.dados-questoes div.temas_p_materia {
+        width: 100%;
+        margin: 15px 0;
+    }
+}

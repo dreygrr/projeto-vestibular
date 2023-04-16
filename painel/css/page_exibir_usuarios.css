@@ -1,0 +1,136 @@
+/* Usuários cadastrados CSS */
+
+/* section.content div.box-infs div.infs.userCad{
+    width: calc(100% / 2 - 5px);
+
+    margin: 0;
+
+    float: left;
+}
+section.content div.box-infs div.infs.userCad:nth-of-type(2){
+	margin-left: 10px;
+}
+section.content div.box-infs div.infs.userCad:nth-of-type(3){
+	margin: 10px 0;
+	width: 100%;
+} */
+
+
+
+section.content div.box-infs {
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+section.content div.box-infs {
+    width: 100%;
+}
+
+
+section.content div.box-infs div.box {
+    border-radius: 20px;
+}
+section.content div.box-infs div.box div.container {
+    display: flex; flex-direction: column;
+    min-height: 138px;
+    /* gap: 5px; */
+    padding: 10px;
+}
+
+section.content div.box-infs div.box h4 {
+    padding: 10px;
+}
+
+
+section.content div.box-infs div.box ul {
+    list-style: none;
+}
+
+section.content div.box-infs div.box ul li {
+    margin: 5px 0;
+    border-bottom: 1px solid var(--color-white-tsp2);
+}
+section.content div.box-infs div.box ul li:last-of-type {
+    border-bottom: none;
+}
+
+
+section.content div.box-infs div.total {
+    /* position: relative; */
+    background-color: var(--color-blue3); color: var(--color-blue7);
+}
+
+section.content div.box-infs div.total h4 {
+    background-color: var(--color-blue0);
+    color: var(--color-blue6);
+}
+
+
+
+section.content div.box-infs div.total div.container {
+    justify-content: center; align-items: center;
+}
+
+section.content div.box-infs div.total p.totalcad {
+    /* position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 56px;
+    text-align: center;
+}
+
+
+section.content div.box-infs div.inst {
+    background-color: var(--color-purple3); color: var(--color-purple6);
+}
+
+section.content div.box-infs div.inst h4 {
+    background-color: var(--color-purple5);
+    color: var(--color-purple2);
+}
+
+
+section.content div.box-infs div.escol {
+    background-color: var(--color-green5); color: var(--color-green1);
+}
+
+section.content div.box-infs div.escol h4 {
+    background-color: var(--color-green2);
+    color: var(--color-green5);
+}
+
+
+
+section.content div.table-container {
+    max-height: 50vh;
+    margin-top: 10px;
+    border-radius: 7px;
+    
+    overflow: hidden;
+    overflow-y: scroll;
+}
+section.content table {
+    text-align: left;
+    border: 2px solid var(--color-purple5);
+    border-radius: 7px;
+}
+section.content table th, section.content table td {
+    padding: 2px 5px;
+}
+
+
+section.content th {
+    background-color: var(--color-purple5);
+}
+
+
+
+@media screen and (max-width: 975px){
+
+    section.content div.box-infs div.infs.userCad {
+        width: 100%;
+        margin: 0 !important;
+        margin-top: 10px !important;
+    }
+}

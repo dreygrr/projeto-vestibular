@@ -1,0 +1,123 @@
+/* Home */
+
+div.box-content .botao {
+    display: block;
+}
+
+
+
+div.box-content h2{
+    text-align: center;
+    font-size: 150%;
+}
+
+
+
+div.welcome {
+    display: flex; justify-content: center; align-items: center;
+    margin-bottom: 15px;
+}
+
+div.welcome i.check {
+    font-size: 72px;
+    margin-right: 15px;
+
+    color: var(--color-green5);
+}
+
+div.welcome h2 {
+    font-size: 37px;
+    font-weight: 900;
+
+    text-align: left;
+    line-height: 36px;
+
+    color: var(--color-titulo);
+}
+
+div.welcome h2 span.nome {
+    color: var(--color-purple4);
+}
+
+
+
+div.info ul {
+    padding: 2px 5px;
+    font-size: larger;
+    list-style-type: none;
+
+    border-left: 4px solid var(--color-blue1);
+}
+
+
+
+div.box-content div.sugestoes {
+    margin-top: 15px;
+}
+
+div.box-content div.sugestoes h3.cabecalho {
+    padding: 3px;
+    margin-bottom: 30px;
+    
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+
+    letter-spacing: 5px;
+    border-radius: 11px;
+
+    background: linear-gradient(45deg, var(--color-gray6) 0, var(--color-gray3) 100%); color: var(--color-white);
+}
+
+
+
+div.box-content div.sugestoes div.banner.roxo {
+    background: linear-gradient(45deg, var(--color-purple3) 0, var(--color-purple4) 100%); color: var(--color-purple6);
+    box-shadow:  0 20px 40px 0 var(--color-purple5);
+}
+div.box-content div.sugestoes div.banner.verde {
+    background: linear-gradient(45deg, var(--color-green5) 0, var(--color-green4) 100%); color: var(--color-green1);
+    box-shadow:  0 20px 40px 0 var(--color-green4);
+}
+div.box-content div.sugestoes div.banner.azul {
+    background: linear-gradient(45deg, var(--color-blue2) 0, var(--color-blue0) 100%); color: var(--color-blue7);
+    box-shadow:  0 20px 40px 0 var(--color-blue0);
+}
+
+
+
+div.box-content div.sugestoes div.banner {
+    min-width: 86%; max-width: 86%;
+    display: flex; justify-content: center; align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+
+    border-radius: 30px;
+}
+div.box-content div.sugestoes div.toright {
+    display: flex; justify-content: flex-end; align-items: center;
+}
+div.box-content div.sugestoes div.toright div.banner div.content {
+    padding-left: unset; padding-right: 20px;
+}
+
+div.box-content div.sugestoes div.banner i.icon {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 100px; max-width: 100px;
+    min-height: 100px; max-height: 100px;
+
+    font-size: 86px;
+}
+
+div.box-content div.sugestoes div.banner div.content {
+    width: 100%;
+    padding-left: 20px;
+}
+
+div.box-content div.sugestoes div.banner h4 {
+    font-size: 28px;
+}
+
+div.box-content div.sugestoes div.banner p {
+    margin: 10px 0;
+}

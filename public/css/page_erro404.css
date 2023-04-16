@@ -1,0 +1,52 @@
+/* CSS da página de erro */
+
+body {
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 36px;
+}
+
+
+
+.container {
+    text-align: center;
+    width: 75%;
+}
+
+
+
+.titulo h1 {
+    position: relative;
+    font-weight: 900;
+}
+
+
+
+.erro {
+    font-weight: 700;
+}
+
+
+
+.icone {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    z-index: -1;
+
+    font-size: 300px;
+    
+    color: var(--color-red1);
+}
+
+
+
+.voltar a:hover {
+    text-decoration: underline;
+}

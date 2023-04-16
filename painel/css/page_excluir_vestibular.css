@@ -1,0 +1,105 @@
+/* Excluir Vestibular ou Tema CSS*/
+
+div.box-content {
+	display: flex; flex-direction: column;
+	gap: 15px;
+}
+
+
+
+div.box-content p.mensagem {
+	margin: 0 auto 30px auto;
+    width: max-content;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+}
+div.box-content p.mensagem.sucesso {
+    background-color: var(--color-green4); color: var(--color-white);
+
+    box-shadow:  0 10px 20px 0 var(--color-green-tsp4);
+}
+div.box-content p.mensagem.falha {
+	background-color: var(--color-red2); color: var(--color-white);
+
+    box-shadow:  0 10px 20px 0 var(--color-red-tsp2);
+}
+
+
+
+p.aviso {
+    width: max-content;
+    padding: 2px 4px;
+
+    font-size: medium;
+    font-weight: 700;
+    
+    /* color: var(--color-gray4); */
+    background-color: var(--color-red0);
+    border-left: 3px solid var(--color-red2);
+    border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+}
+
+
+
+form h4 {
+	margin-bottom: 10px;
+}
+
+
+
+form div.vests-container ul {
+	display: flex; flex-direction: column;
+	/* gap: 10px; */
+
+	list-style-type: none;
+
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+
+form div.vests-container ul li {
+	display: flex; justify-content: center; align-items: center;
+	padding: 10px;
+	font-weight: 700;
+
+	border-bottom: 1px solid var(--color-gray2);
+
+	background-color: var(--color-light-gray);
+}
+form div.vests-container ul li:last-of-type {
+	border-bottom: none;
+}
+
+
+form div.vests-container ul li button {
+	display: flex; justify-content: center; align-items: center;
+	min-width: 42px; max-width: 42px;
+	min-height: 42px; max-height: 42px;
+	font-size: 20px;
+
+	background-color: transparent;
+	color: var(--color-black);
+
+	border: 2px solid var(--color-black);
+	border-radius: 100%;
+	outline: none;
+
+	cursor: pointer;
+
+	transition: .5s;
+}
+
+
+form div.vests-container ul li button:hover, form div.vests-container ul li button:focus {
+	background-color: var(--color-red0); border-color: var(--color-red0);
+	color: var(--color-red3);
+}
+
+
+
+form div.vests-container ul li p {
+	width: 100%;
+}

@@ -1,0 +1,70 @@
+/* Home */
+
+div.box-content h2 {
+    text-align: center;
+    font-size: 150%;
+}
+
+div.box-content div.dados {
+    padding: 2px;
+    text-align: center;
+}
+
+div.dados form {
+    display: block;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+form div.text-box {
+    width: 100%;
+    margin-top: 20px;
+
+    text-align: left;
+    font-size: 95%;
+}
+
+div.text-box input,
+div.text-box select{
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 10px;
+
+    background: var(--color-background-basic);
+    border-radius: 5px;
+    
+    outline: none;
+}
+
+form a{
+    display: block;
+
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+form button{
+    width: 100%;
+
+    border: 0;
+    border-radius: 10px;
+
+    margin-top: 45px;
+    padding: 10px;
+
+    cursor: pointer;
+
+    background-color:#F7DD68;
+    color: var(--color-black);
+    font-size: 100%;
+
+    transition: background 0.2s;
+}
+
+form button:hover{
+    background-color:#FAD12E;
+}

@@ -1,0 +1,163 @@
+div.box-content div.subtema-container h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+div.box-content div.subtema-container h1 {
+    text-transform: uppercase;
+    color: var(--color-blue3);
+}
+
+
+
+div.alterar_quest h3{
+    text-align: center;
+}
+
+
+
+p.aviso {
+    padding: 2px 4px;
+
+    font-size: medium;
+    font-weight: 700;
+    
+    /* color: var(--color-gray4); */
+    background-color: var(--color-yellow3);
+    border-left: 3px solid var(--color-yellow1);
+    border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+}
+
+
+
+div.alterar_quest {
+    display: flex; flex-direction: column;
+    gap: 15px;
+}
+
+
+
+div.alterar_quest form div.box-category {
+    border: 4px solid var(--color-purple5);
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+div.alterar_quest form div.box-category div.bloco-container {
+    padding: 10px;
+}
+
+
+
+div.box-content form div.box-category {
+    margin: unset;
+}
+
+
+
+div.alterar_quest form {
+    display: flex; flex-direction: column;
+    gap: 15px;
+}
+
+
+
+div.alterar_quest form div.box-category h2 {
+    padding: 10px;
+    font-size: medium;
+    font-weight: 800;
+    text-align: left;
+
+    text-transform: uppercase;
+    background-color: var(--color-purple5);color: var(--color-purple2);
+}
+
+
+
+div.alterar_quest form div.box-category div.bloco-container.alternativas {
+    display: flex; flex-direction: column;
+    gap: 10px;
+}
+
+
+div.alterar_quest form div.box-category div.field.alternativa {
+    display: flex; justify-content: center; align-items: center;
+    gap: 6px;
+}
+
+
+
+div.alterar_quest form div.box-category div.field label {
+    display: block;
+    font-weight: 700;
+}
+
+
+div.alterar_quest form div.box-category div.field textarea {
+    height: 100px;
+    min-height: 38px;
+    max-height: 200px;
+}
+
+
+
+div.alterar_quest form div.box-category div.field input, div.alterar_quest form div.box-category div.field textarea, div.alterar_quest form div.box-category div.field select {
+    width: 100%;
+    padding: 8px;
+    font-size: large;
+
+    border: none;
+    border-radius: 15px;
+    background-color: var(--color-light-gray);
+
+    transition: .1s;
+}
+
+div.alterar_quest form div.box-category div.field input:hover, div.alterar_quest form div.box-category div.field input:focus, div.alterar_quest form div.box-category div.field textarea:hover, div.alterar_quest form div.box-category div.field textarea:focus, div.alterar_quest form div.box-category div.field select:hover, div.alterar_quest form div.box-category div.field select:focus {
+    background-color: var(--color-lighter-gray);
+}
+
+
+
+div.alterar_quest form div.box-category div.informacoes {
+    display: flex; justify-content: center; align-items: center;
+    flex-wrap: wrap;
+}
+
+div.alterar_quest form div.box-category div.informacoes div.field {
+    width: 50%;
+}
+
+
+
+div.alterar_quest form button.botao {
+    width: max-content;
+    padding: 8px 12px;
+    font-size: small;
+
+    font-weight: 700;
+    border-radius: 20px;
+    border: 2px solid var(--color-purple3);
+    background-color: var(--color-purple3);
+    color: var(--color-white);
+
+    cursor: pointer;
+    
+    transition: .2s;
+}
+
+div.alterar_quest form button.botao:hover {
+    background-color: var(--color-purple4);
+    border-color: var(--color-purple4);
+}
+
+
+
+a.botao, button.botao {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,580 @@
+/* MENU DO USUARIO CSS */
+
+div.menu {
+    /* display: flex; align-items: center; */
+    position: relative;
+    width: 280px; height: 100%;
+    
+	overflow-x:hidden; overflow-y: auto;
+
+    /* padding: 10px 0; */
+	float: left;
+	position: fixed;
+	left: 0; top: 0;
+    
+	background: var(--color-menu);
+}
+
+
+
+.logo {
+    width: 20%;
+    padding: 10px;
+    margin: auto;
+}
+
+
+
+h1 {
+    text-transform: unset;
+    color: var(--color-titulo);
+}
+
+
+
+/*PERFIL*/
+div.menu div.box-usuario.mobile {
+    display: none;
+}
+div.menu div.box-usuario {
+    display: flex; justify-content: center; align-items: center;
+	text-align: center;
+}
+
+
+div.box-usuario a.perfil-usuario {
+    width: 80%;
+	display: flex; align-items: center;
+    
+    /* width: min-content; */
+    padding: 10px;
+
+    color: var(--color-white);
+
+    transition: .1s;
+}
+div.box-usuario a.perfil-usuario:hover {
+    background-color: var(--color-blue3);
+}
+
+
+div.box-usuario a.perfil-usuario div.foto {
+    display: flex; align-items: center; justify-content: center;
+    width: 44px; height: 44px;
+    margin-right: 6px;
+
+    border-radius: 100%;
+    background-color: var(--color-perfil-fundo);
+}
+
+div.box-usuario a.perfil-usuario div.foto i.icone {
+    font-size: 30px;
+
+    color: var(--color-perfil);
+}
+
+
+div.box-usuario a.perfil-usuario div.info-usuario {
+    margin-left: 6px;
+}
+div.box-usuario a.perfil-usuario div.info-usuario p {
+    text-align: left;
+}
+
+div.box-usuario a.perfil-usuario p.nivel{
+	font-size: small; font-weight: 700;
+    color: var(--color-nivel);
+}
+
+
+div.box-usuario div.botao-menu-mobile{
+    display: none;
+}
+
+div.box-usuario div.botao-menu-mobile i{
+    text-align: center;
+    color: var(--color-white);
+    padding-top: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+/**************/
+
+
+
+div.box-links div.links-mobile {
+    display: none;
+}
+
+
+
+div.box-links div.itens:first-child{
+    border-top: 1px solid var(--color-footer);
+    
+}
+
+div.box-links div.itens a {
+    display: block;
+    
+	text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: medium;
+	font-weight: 500;
+    color: var(--color-white);
+    
+    border-bottom: 1px solid var(--color-footer);
+    
+	padding: 10px;
+    transition: .1s;
+}
+div.box-links div.itens a:hover{
+    background-color: var(--color-blue3);
+}
+
+
+
+div.box-links div.itens div.expanding-section.excluir i.label-icon {
+    transform: rotate(45deg);
+}
+
+
+
+div.box-links div.itens div.expanding-section {
+    position: relative;
+}
+
+div.box-links div.itens div.expanding-section .label {
+    position: relative;
+}
+div.box-links div.itens div.expanding-section .label i.chevron {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 10px;
+}
+/* div.box-links div.itens div.expanding-section .label::before {
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    right: 10px;
+
+    content: '+';
+    font-size: x-large;
+}
+div.box-links div.itens div.expanding-section.active .label::before {
+    content: '-';
+} */
+
+div.box-links div.itens div.expanding-section .content {
+    position: relative;
+    height: 0;
+
+    overflow: hidden;
+    /* overflow-y: auto; */
+
+    background-color: var(--color-blue5);
+
+    transition: .3s;
+}
+div.box-links div.itens div.expanding-section .content a {
+    padding: 10px 25px;
+}
+
+div.box-links div.itens div.expanding-section.active .content {
+    height: max-content;
+}
+
+
+
+
+div.menu div.links {
+    display: block;
+    position: absolute; bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+div.menu div.links a {
+    font-size: medium;
+    font-weight: 500;
+
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    transition: .1s;
+}
+div.menu div.links a:hover {
+    color: var(--color-purple5);
+}
+
+
+
+div.menu div.links a.loggout {
+    color: var(--color-red1);
+
+    transition: .1s;
+}
+div.menu div.links a.loggout:hover {
+    color: var(--color-red0);
+}
+
+
+
+div.menu div.links-mobile a.home {
+    transition: .1s;
+}
+div.menu div.links-mobile a.home:hover {
+    color: var(--color-purple5);
+}
+
+
+div.menu div.links-mobile a.sair {
+    color: var(--color-red1);
+
+    transition: .1s;
+}
+div.menu div.links-mobile a.sair:hover {
+    color: var(--color-red0);
+}
+
+
+
+/* Content CSS */
+
+section.content{
+    display: flex; justify-content: center; align-items: center;
+    width: calc(100% - 280px);
+    min-height: 100%;
+    
+	position: relative;
+    left: 280px;
+    padding: 30px;
+
+	background: var(--color-background-basic);
+}
+
+.box-content {
+    width: 100%;
+    
+	padding: 40px;
+	margin-bottom: 25px;
+
+    border-radius: 20px;
+	
+    background-color: var(--color-white);
+
+    box-shadow:  0 30px 50px 0 rgb(0, 0, 0, .2);
+}
+
+section.content h2{
+	font-weight: 600;
+}
+
+section.content div.box-infs{
+	width: 100%;
+	margin: 10px 0;
+}
+
+section.content div.box-infs div.infs{
+    width: calc(100% / 2);
+    
+    margin: 0 auto;
+	min-height: 95px;
+    height: 100%;
+    
+    color: var(--color-white);
+	text-align: center;
+    
+	padding: 10px;
+}
+
+section.content div.box-infs div.infs+div.infs{
+	margin-left: 11px;
+}
+
+
+/* Painel do Adm CSS Geral*/
+
+div.box-content form.formulario{
+	width: 100%;
+    max-width: 800px;
+    
+	margin: 10px 0;
+    padding: 20px;
+    
+	color: var(--color-white);
+    border: 1px solid var(--color-black);
+    
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+/* div.box-content form h2{
+	text-align: center;
+} */
+
+div.box-content form div.box-category{
+	width: 100%;
+	margin: 30px 0;
+}
+
+div.box-content form#form-disser div.box-category:nth-of-type(3){
+	text-align: center;
+}
+
+/* div.box-content form div.box-category input,
+div.box-content form div.box-category textarea,
+div.box-content form div.box-category select{
+	margin: 5px 0;
+	width: 100%;
+	padding: 7px;
+} */
+
+div.box-content form div.box-category textarea{
+	resize: vertical;
+}
+
+/* div.box-content form div.box-category label{
+	padding-top: 10px;
+} */
+
+/* div.box-content form div.buttons{
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+}
+
+div.box-content form div.buttons button{
+	width: 95%;
+    max-width: 280px;
+    
+	margin-top: 10px;
+    padding: 7px;
+
+	background-color: var(--color-green);
+    
+    cursor: pointer;
+}
+div.box-content form div.buttons button:hover{
+    font-weight: bold;
+} */
+div.box-content table{
+	width: 100%;
+	text-align: center;
+	border-spacing: 0;
+	border-collapse: unset;
+	/* margin-top: 20px; */
+}
+
+/* div.box-content table tr:nth-of-type(1){
+	background: var(--color-alternative-button);
+	color: var(--color-white);
+} */
+
+/* div.box-content table tr td,
+div.box-content table tr th{
+	padding: 8px;
+} */
+
+/* div.box-content table tr td{
+	border-bottom: 1px solid var(--color-background-basic);
+}  */
+
+div.box-content table tr td button{
+	background: none;
+	color: var(--color-red);
+	cursor: pointer;
+}
+
+div.box-content table tr td form.form_delete_adm{
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+
+/* Home Painel CSS*/
+
+div.box-content table.home tr th,
+div.box-content table.home tr td{
+	text-align: start;
+}
+
+
+/* Gerar Relatórios */
+
+div.box-content h2{
+    font-size: 100%;
+}
+
+div.box-content div.reports div.infs{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+div.box-content div.reports div.infs.red,
+div.box-content div.reports div.infs.blue{
+	margin-left: 11px;
+}
+
+
+
+
+
+
+.mensagem-red {
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    background-color: var(--color-red2); color: var(--color-white);
+
+    border-radius: 20px;
+    box-shadow:  0 10px 20px 0 var(--color-red-tsp2);
+}
+.mensagem-green {
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    background-color: var(--color-green4);
+    color: var(--color-white);
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 var(--color-green-tsp4);
+}
+
+@media screen and (max-width: 975px) {
+    div.menu {
+        position: unset;
+        width: 100%; height: auto;
+
+        overflow-y: hidden;
+    
+        float: unset;
+    }
+
+
+
+    div.menu div.box-links {
+        display: none;
+    }
+
+
+    div.menu div.box-usuario.desktop {
+        display: none;
+    }
+    div.menu div.box-usuario.mobile {
+        display: flex; justify-content: center; align-items: center;
+        padding: 2px 10px;
+    }
+    
+
+
+    div.box-usuario.mobile div.mobile-container1 {
+        display: flex; justify-content: left; align-items: center;
+        width: 100%;
+    }
+    div.box-usuario.mobile div.mobile-container1 a.perfil-usuario {
+        width: max-content;
+        padding: 10px;
+
+        border-radius: 15px;
+    }
+
+
+    div.box-usuario.mobile div.mobile-container2 {
+        display: flex; justify-content: center; align-items: center;
+        width: 100%;
+    }
+    div.box-usuario.mobile div.logo {
+        width: 100%;
+    }
+    div.box-usuario.mobile div.logo img {
+        height: 50px;
+    }
+
+    
+    div.box-usuario.mobile div.mobile-container3 {
+        display: flex; justify-content: end; align-items: center;
+        width: 100%;
+    }
+    div.box-usuario.mobile div.botao-menu-mobile {
+        display: block;
+        width: max-content;
+    }
+    div.box-usuario.mobile div.botao-menu-mobile i {
+        padding: 10px;
+        font-size: 32px;
+    }
+
+
+
+    div.box-links div.links-mobile {
+        display: block;
+    }
+
+
+
+    div.menu div.links.desktop {
+        display: none;
+    }
+
+
+
+    /* div.menu div.links.desktop {
+        display: none;
+    } */
+
+
+    
+    /*
+    div.box-links div.links-mobile a.home {
+        color: var(--color-purple5);
+    }
+    div.box-links div.links-mobile a.sair {
+        color: var(--color-red1);
+    } */
+
+
+
+    section.content{
+        width: 100%;
+        height: auto;
+        
+        position: unset;
+    } 
+
+    section.content div.box-infs div.infs{
+        width: 100%;
+        min-height: auto;
+        height: auto;
+
+        float: unset;
+    }
+    section.content div.box-infs div.infs+div.infs{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 475px){
+
+    div.box-content form.formulario{
+        padding: 10px;
+    }
+    
+    section.content{
+        padding: 10px;
+    }
+
+    .box-content{
+        padding: 30px 10px;
+        margin-bottom: 25px;
+        width: 100%;
+        background-color: var(--color-white);
+    }
+
+}

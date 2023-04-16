@@ -1,0 +1,140 @@
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+section.feedback {
+    min-height: 80vh;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.enviar-feedback div.links {
+    margin-top: 25px;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.enviar-feedback div.links a {
+    margin: 0 12px;
+
+    color: var(--basic-link);
+}
+.enviar-feedback div.links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.enviar-feedback {
+    margin: 150px auto;
+    width: 75%;
+}
+
+
+
+.enviar-feedback h3 {
+    text-align: center;
+}
+
+
+
+.enviar-feedback .icone-sucesso {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+
+    color: var(--color-green5);
+}
+
+
+
+.enviar-feedback .icone-erro {
+    display: block;
+    text-align: center;
+    font-size: 72px;
+
+    color: var(--color-red2);
+}
+
+
+
+.enviar-feedback p {
+    margin: 15px 0;
+}
+
+
+
+.enviar-feedback form.formulario {
+    padding: 25px;
+
+    border-radius: 15px;
+    border: 2px solid var(--color-gray);
+}
+
+
+
+.enviar-feedback form.formulario .field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.enviar-feedback form.formulario .field input, .enviar-feedback form.formulario .field textarea {
+    padding: 8px;
+
+    font-size: large;
+
+    border: none;
+    border-radius: 15px;
+
+    background-color: var(--color-light-gray);
+
+    transition: .1s;
+}
+.enviar-feedback form.formulario .field input:hover, .enviar-feedback form.formulario .field input:focus,
+.enviar-feedback form.formulario .field textarea:hover, .enviar-feedback form.formulario .field textarea:focus {
+    background-color: var(--color-lighter-gray);
+}
+
+
+
+.enviar-feedback form.formulario .field input {
+    width: 50%;
+}
+
+.enviar-feedback form.formulario .field textarea {
+    min-width: 100%; max-width: 100%;
+    min-height: 250px; max-height: 420px;
+}
+
+
+
+.enviar-feedback form.formulario .mensagem {
+    margin: 15px 0;
+}
+
+
+
+form.formulario .enviar {
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+
+div.msg-container p {
+    text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 875px){
+    .enviar-feedback form.formulario .field input {
+        width: 100%;
+    }
+}

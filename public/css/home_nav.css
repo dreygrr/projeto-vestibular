@@ -1,0 +1,162 @@
+/* CSS do NAV */
+
+header{
+    padding: 5px;
+    background: var(--color-nav);
+}
+
+header .center{
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+header .logo{
+    /* font-size: 23px; */
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.mobile{
+    display: none; /* Fazendo o menu do mobile sumir */
+}
+
+nav.desktop ul{
+    list-style-type: none;
+}
+
+nav.desktop li{
+    /* padding: 0 30px; */
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+
+
+nav.desktop a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+nav.desktop a:hover{
+    /* text-decoration: underline; */
+    background-color: var(--color-nav-button);
+    /* color: var(--color-green1); */
+}
+
+
+
+.logo img{
+    width: 50px;
+}
+
+
+
+/* QUANDO A TELA FOR MENOR QUE 925PX */
+@media screen and (max-width: 1120px) {
+    nav.desktop a {
+        padding: 5px 10px;
+        font-size: medium;
+    }
+}
+
+
+
+/* QUANDO A TELA FOR MENOR QUE 925PX */
+@media screen and (max-width: 925px){
+    header{
+        padding: 5px 15px;
+    }
+
+    nav.desktop{  display: none;  }
+    nav.mobile{  display: block;  }
+
+    nav.mobile .botao-menu-mobile{
+        position: relative;
+        z-index: 3;
+        margin-top: 0;
+    }
+
+    nav.mobile ul {
+        display: none;
+        position: absolute; left: 0; top: 0; z-index: 2;
+        width: 100%; height: 100%;
+
+        text-align: center;
+        
+        list-style-type: none;
+        background: rgba(0, 0, 0, 0.95);
+    }
+
+    nav.mobile li{
+        width: 100%;
+        padding: 10px 0;
+
+        border-bottom: 1px solid var(--color-gray2);
+
+        text-transform: uppercase;
+    }
+
+    nav.mobile li a{
+        width: max-content; margin: 0 auto;
+        font-weight: 700;
+
+        transition: .1s;
+    }
+
+    nav.mobile li a:hover, nav.mobile li a:active {
+        color: var(--color-purple5);
+    }
+
+    nav.mobile li:last-child{
+        border-bottom: none;
+    }
+
+    nav.mobile li:first-child {
+        margin-top: 75px;
+    }
+
+    nav.mobile li a {
+        display: block;
+
+        font-size: 110%;
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.87);
+    }
+
+    .botao-menu-mobile{
+        cursor: pointer;
+        color: var(--color-white);
+        font-size: 50px;
+        margin-top: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+
+    footer div.contato{
+        float: unset;
+        text-align: center;
+    }
+
+    div.contato form{  margin: 0 auto;  }
+
+    div.contato form p{
+        float: unset;
+        text-align: center;
+    }
+
+    div.contato form button{
+        float: unset;
+        margin-bottom: 20px;
+    }
+
+    /* footer div.texto{
+        float: unset;
+        text-align: center;
+    } */
+}

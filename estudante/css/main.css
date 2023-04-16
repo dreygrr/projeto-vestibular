@@ -1,0 +1,301 @@
+/** Área do usuário **/
+h3 {
+    font-size: 48px; font-weight: 800;
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+}
+
+h3.titulo {
+    font-size: 48px; font-weight: 800;
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+    
+    text-align: center;
+
+    color: var(--color-titulo);
+}
+
+
+
+div.menu {
+    /* display: flex; align-items: center; */
+    position: relative;
+	overflow-x:hidden; overflow-y: auto;
+    
+    width: 280px; height: 100%;
+    
+    /* padding: 10px 0; */
+	float: left;
+	position: fixed;
+	left: 0;
+    top: 0;
+    
+	background: var(--color-menu);
+}
+
+
+
+.titulo {
+    font-size: x-large;
+
+    text-align: center;
+
+    font-weight: 800;
+}
+
+
+
+.logo-container {
+    width: 20%; height: 100%;
+    padding: 10px;
+}
+
+.logo {
+    /* margin: auto; */
+    width: 40px;
+}
+
+div.menu div.box-usuario{
+    display: flex; justify-content: center; align-items: center;
+
+    text-align: left;
+}
+
+
+
+div.box-usuario a.perfil-usuario {
+	display: flex; /* justify-content: center;  */align-items: center;
+    
+    width: 80%;
+    padding: 10px;
+
+    color: var(--color-white);
+
+    transition: .1s;
+}
+div.box-usuario a.perfil-usuario:hover {
+    background-color: var(--color-blue3);
+}
+
+div.box-usuario a.perfil-usuario div.foto {
+    display: flex; align-items: center; justify-content: center;
+    min-width: 44px; min-height: 44px; max-width: 44px; max-height: 44px;
+    margin-right: 6px;
+
+    border-radius: 100%;
+    background-color: var(--color-perfil-fundo);
+}
+
+div.box-usuario a.perfil-usuario div.foto i.icone {
+    font-size: 30px;
+
+    color: var(--color-perfil);
+}
+
+
+div.box-usuario a.perfil-usuario div.info-usuario {
+    margin-left: 6px;
+}
+div.box-usuario a.perfil-usuario div.info-usuario p {
+    margin: -3px 0;
+}
+
+div.box-usuario a.perfil-usuario p.nivel{
+	font-size: small; font-weight: 700;
+    color: var(--color-nivel);
+}
+
+
+
+div.box-usuario div.botao-menu-mobile{
+    display: none;
+}
+
+div.box-usuario div.botao-menu-mobile i{
+    text-align: center;
+    color: var(--color-white);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+div.box-usuario .logo img{
+    width: 80px;
+}
+
+div.menu div.box-links{
+
+}
+
+div.menu h2{
+    font-size: 110%;
+    padding-top: 10px;
+}
+
+div.box-usuario div.nome-usuario{
+	text-align: center;
+	margin-top: 10px;
+}
+
+div.box-usuario div.nome-usuario p{
+	color: var(--color-white);
+}
+
+div.box-usuario div.nome-usuario p b{
+	color: var(--color-footer);
+}
+
+div.menu div.box-links{
+	
+}
+
+div.box-links div.itens:first-child{
+    border-top: 1px solid var(--color-footer);    
+}
+
+
+
+div.box-links div.itens a {
+    display: block;
+    padding: 10px;
+    
+	text-decoration: none;
+    text-transform: uppercase;
+	font-weight: 500;
+    font-size: medium;
+    
+    color: var(--color-white);
+    
+    border-bottom: 1px solid var(--color-footer);
+    
+    transition: .1s;
+}
+div.box-links div.itens a:hover{
+    background-color: var(--color-blue3);
+}
+
+
+
+div.menu div.links {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    
+    font-size: medium;
+    font-weight: 500;
+}
+
+div.menu div.links a {
+    text-transform: uppercase;
+    color: var(--color-white);
+
+    transition: .1s;
+}
+div.menu div.links a:hover {
+    color: var(--color-purple5);
+}
+
+
+
+div.menu div.links a.loggout {
+    color: var(--color-red1);
+
+    transition: .1s;
+}
+div.menu div.links a.loggout:hover {
+    color: var(--color-red0);
+}
+
+
+
+/* Content CSS */
+
+section.content{
+    display: flex; justify-content: center; align-items: center;
+    width: calc(100% - 280px);
+    min-height: 100%;
+    
+	position: relative;
+    left: 280px;
+    padding: 30px;
+
+    background: var(--color-background-basic);
+}
+
+.box-content{
+    /* width: 100%; */
+    max-width: max-content;
+    margin: 0 auto;
+
+	padding: 40px;
+	margin-bottom: 25px;
+
+    border-radius: 20px;
+	
+    background-color: var(--color-white);
+
+    box-shadow:  0 30px 50px 0 rgb(0, 0, 0, .2);
+
+}
+
+section.content h2{
+    font-weight: 600;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px){
+
+    div.menu{
+        overflow-y: hidden;
+        
+        height: auto;
+        width: 100%;
+
+        float: unset;
+        
+        position: unset;
+    }
+
+    div.menu div.box-links{
+        display: none;
+    }
+
+    div.box-usuario div.botao-menu-mobile{
+        display: block;
+    }
+
+    section.content{
+        width: 100%;
+        height: auto;
+        
+        position: unset;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    section.content{
+        padding: 10px;
+    }
+
+    .box-content{
+        margin-bottom: 25px;
+        width: 100%;
+        background-color: var(--color-white);
+    }
+
+    div.temas_p_materia p.temas{
+        display: block;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    div.temas_p_materia p.temas+p.temas{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+}

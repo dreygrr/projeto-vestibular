@@ -1,0 +1,510 @@
+/* CSS principal do site */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+
+
+/*VARIÁVEIS COM CORES UTILIZADAS AO LONGO DO PROJETO*/
+:root{
+    --color-black: #000;
+    --color-white: #fff;
+
+    --color-white-tsp1: rgba(255, 255, 255, .5);
+    --color-white-tsp2: rgba(255, 255, 255, .2);
+    
+    --color-background-basic: #eee;
+    --color-lighter-gray: #ededed;
+    --color-light-gray: #e3e3e3;
+
+    --color-gray: #c3c3c3;
+
+    --color-gray0: #b3b3b3;
+    --color-gray1: #a6a6a6;
+    --color-gray2: #808080;
+    --color-gray3: #555555;
+    --color-gray4: #3a3a3a;
+    --color-gray5: #2a2a2a;
+    --color-gray6: #131313;
+
+
+    
+    --color-shadow: #222;
+
+
+
+    --color-red0: #ff8e82;
+    --color-red1: #ef5e4e;
+    --color-red2: #d13a29;
+    --color-red3: #690501;
+
+    --color-red-tsp2: rgba(209, 58, 41, .5);
+
+
+
+    --color-blue0: #1587f0;
+    --color-blue1: #0466C8;
+    --color-blue2: #0353A4;
+    --color-blue3: #023E7D;
+    --color-blue4: #002855;
+    --color-blue5: #001845;
+    --color-blue6: #001233;
+    --color-blue7: #d0dbe8;
+    --color-blue8: #3364a1;
+    --color-blue9: #509bf7;
+
+    --color-blue-tsp1: rgb(4, 102, 200, .5);
+
+
+
+    --color-green1: #CCFF33;
+    --color-green2: #9EF01A;
+    --color-green3: #70e000;
+    --color-green4: #38b000;
+    --color-green5: #216216;
+    --color-green6: #3f6a39;
+    --color-green7: #d9e8bf;
+    
+    --color-green-tsp3: rgb(112, 224, 0, .5);
+    --color-green-tsp4: rgb(56, 176, 0, .5);
+    --color-green-tsp5: rgb(33, 98, 22, .5);
+
+
+
+    
+    --color-purple1: #421869;
+    --color-purple2: #491a74;
+    --color-purple3: #721cb8;
+    --color-purple4: #995bd5;
+    --color-purple5: #bf99f2;
+    --color-purple6: #dec5ff;
+
+    --color-purple-tsp3: rgba(114, 28, 184, .5);
+    --color-purple-tsp6: rgba(222, 197, 255, .75);
+
+
+    --color-yellow0: #4f3600;
+    --color-yellow1: #826c00;
+    --color-yellow2: #ffcc00;
+    --color-yellow3: #ffdd48;
+    --color-yellow4: #ceb84f;
+
+
+
+    --color-titulo: var(--color-gray6);
+
+
+
+    /*BOTOES*/
+    --botao-verde-fora: var(--color-green3);
+    --botao-verde-hover: var(--color-green2);
+    --botao-verde-dentro: var(--color-green5);
+    --botao-verde-sombra: var(--color-green-tsp4);
+
+    --botao-vermelho-fora: var(--color-red2);
+    --botao-vermelho-hover: var(--color-red1);
+    --botao-vermelho-dentro: var(--color-black);
+
+    --botao-azul-fora: var(--color-blue1);
+    --botao-azul-hover: var(--color-blue0);
+    --botao-azul-dentro: var(--color-white);
+    --botao-azul-sombra: var(--color-blue-tsp1);
+
+    --botao-roxo-fora: var(--color-purple3);
+    --botao-roxo-hover: var(--color-purple4);
+    --botao-roxo-dentro: var(--color-white);
+
+    --botao-branco-fora: var(--color-white);
+    --botao-branco-dentro: var(--color-black);
+
+
+
+
+    /*HYPERLINKS*/
+    --basic-link: var(--color-blue1);
+
+
+
+    --color-text-basic: rgb(36, 41, 46);
+
+    --color-classic-button: #C7A83C;
+    --color-classic-button-secundary: #AD9334;
+    --color-alternative-button: #00C59E;
+    --color-alternative-button-secundary: #10b191;
+
+
+
+    /* NAV */
+    --color-nav: var(--color-blue4);
+    --color-nav-button: var(--color-blue3);
+
+
+
+    /* MENU USUARIO */
+    --color-menu: var(--color-blue4);
+    --color-perfil-fundo: var(--color-white);
+    --color-perfil: var(--color-purple4);
+    --color-nivel: var(--color-gray2);
+
+
+
+    /* RODAPE */
+    --color-footer:  var(--color-blue6);
+
+
+
+    --color-footer-secundary:  #421869; 
+    --color-alternative-blue:  #00426B;
+}
+
+.blue{  background: #0091ea;  }
+.yellow{  background: #F4B03E;  }
+.red{  background: #E05C4E;  }
+
+
+
+.large-space {
+    display: block;
+    width: 100%; height: 100px;
+}
+
+
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif; letter-spacing: -.2px;
+}
+
+
+
+html, body{
+    height: 100%; font-size: large;
+
+    overflow-x: hidden;
+}
+
+
+
+input, select, button{  border: none;  }
+
+img{
+    max-width: 100%;
+}
+
+/* hr{  margin: 25px 0;  } */
+
+input:hover{
+	border-color:0.3px solid black;
+}
+
+a,p{  font-size: 100%;  }
+
+a{
+    text-decoration: none;
+    color: var(--color-black);
+}
+a.link:hover{
+    text-decoration: underline;
+}
+
+a.basic-link {
+    color: var(--basic-link);
+}
+a.basic-link:hover {
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 48px; font-weight: 800;
+    letter-spacing: -1px;
+
+    text-transform: uppercase;
+}
+
+
+/** Boot CSS **/
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.w33{
+    width: 33%;
+}
+.w25{
+    width: 23.49%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both; /* Reseta todos os floats que foram usados*/
+}
+.buttons{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+/* div.mensagem{
+    width: 80%;
+
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--color-shadow);
+
+    text-align: center;
+    color: var(--color-white);
+}
+div.mensagem a{
+    color: var(--color-white);
+}
+div.mensagem a:hover{
+    text-decoration: underline;
+} */
+div.green{
+    background: var(--color-green);
+}
+div.red{
+    background: var(--color-red);
+}
+
+
+
+/*BOTOES*******************************************************************************/
+input.botaofilled-verde[type=submit] {
+    border: none;
+    background-color: var(--botao-verde-fora); color: var(--botao-verde-dentro);
+
+    padding: 8px; min-width: 150px;
+    font-weight: 700;
+    
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+input.botaofilled-verde[type=submit]:hover {
+    background-color: var(--botao-verde-hover);
+}
+
+.botaofilled-verde[type=submit], .botaofilled-verde {
+    border: none;
+    background-color: var(--botao-verde-fora); color: var(--botao-verde-dentro);
+
+    padding: 8px; min-width: 150px;
+    font-weight: 700;
+    
+    border-radius: 15px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+.botaofilled-verde[type=submit]:hover, .botaofilled-verde:hover {
+    background-color: var(--botao-verde-hover);
+}
+
+
+
+.botaofilled-azul, a.botaofilled-azul, button.botaofilled-azul {
+    width: max-content; min-width: 150px;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    background-color: var(--botao-azul-fora); color: var(--botao-azul-dentro);
+    
+    border: none;
+    
+    cursor: pointer;
+
+    transition: .2s;
+}
+.botaofilled-azul:hover, a.botaofilled-azul:hover, button.botaofilled-azul:hover {
+    background-color: var(--botao-azul-hover);
+}
+
+
+
+.botaotofill-branco, a.botaotofill-branco, button.botaotofill-branco {
+    width: max-content;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    background-color: transparent; color: var(--botao-branco-fora);
+    
+    border: 2px solid var(--botao-branco-fora);
+    
+    cursor: pointer;
+
+    transition: .2s;
+}
+.botaotofill-branco:hover, a.botaotofill-branco:hover, button.botaotofill-branco:hover {
+    background-color: var(--botao-branco-fora); color: var(--botao-branco-dentro);
+
+    border-color: var(--botao-branco-fora);
+}
+
+
+
+.botaotofill-cinza {
+    width: max-content;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+    border: 2px solid var(--color-gray);
+    
+    transition: .2s;
+}
+.botaotofill-cinza:hover {
+    background-color: var(--color-gray);
+}
+
+
+
+.botaotofill-azul, a.botaotofill-azul, button.botaotofill-azul {
+    width: max-content;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    background-color: transparent;
+    
+    border: 2px solid var(--color-black);
+    
+    cursor: pointer;
+
+    transition: .2s;
+}
+.botaotofill-azul:hover, a.botaotofill-azul:hover, button.botaotofill-azul:hover {
+    background-color: var(--botao-azul-fora); color: var(--botao-azul-dentro);
+
+    border: 2px solid var(--botao-azul-fora);
+}
+
+
+
+.botaotofill-vermelho, a.botaotofill-vermelho, button.botaotofill-vermelho {
+    width: max-content; min-width: 150px;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    background-color: transparent;
+    
+    border: 2px solid var(--color-black);
+    
+    cursor: pointer;
+
+    transition: .2s;
+}
+.botaotofill-vermelho:hover, a.botaotofill-vermelho:hover, button.botaotofill-vermelho:hover {
+    background-color: var(--botao-vermelho-fora); color: var(--botao-vermelho-dentro);
+
+    border: 2px solid var(--botao-vermelho-fora);
+}
+
+
+
+.msg-erro {
+    width: max-content; margin: 0 auto 15px auto;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: var(--color-red3); color: var(--color-white);
+}
+
+
+
+.msg-sucesso {
+    width: max-content; margin: 0 auto 15px auto;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: var(--color-green5); color: var(--color-white);
+}
+
+
+
+.msg-cinza {
+    width: max-content; margin: 0 auto 15px auto;
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background-color: var(--color-gray);
+}
+
+
+
+.botaotofill-roxo, a.botaotofill-roxo, button.botaotofill-roxo {
+    width: max-content;
+    padding: 8px 12px;
+
+    font-size: small;
+    font-weight: 700;
+    
+    border-radius: 20px;
+
+    background-color: transparent;
+    
+    border: 2px solid var(--color-black);
+    
+    cursor: pointer;
+
+    transition: .2s;
+}
+.botaotofill-roxo:hover, a.botaotofill-roxo:hover, button.botaotofill-roxo:hover {
+    background-color: var(--botao-roxo-fora); color: var(--botao-roxo-dentro);
+
+    border: 2px solid var(--botao-roxo-fora);
+}
+
+
+
+@media screen and (max-width: 675px){
+    .w25{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .w33{
+        width: 100%;
+    }
+}

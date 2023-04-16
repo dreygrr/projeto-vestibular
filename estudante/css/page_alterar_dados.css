@@ -1,0 +1,95 @@
+form{
+    display: block;
+    margin: 10px auto 20px;
+    padding: 10px;
+
+    width: 100%;
+    max-width: 500px;
+}
+
+form div.text-box{
+    width: 100%;
+    margin-top: 20px;
+
+    text-align: left;
+    font-size: 95%;
+}
+
+div.text-box span{
+    color: var(--color-red);
+}
+
+div.text-box input, div.text-box select {
+    width: 100%;
+
+    margin-top: 8px;
+    padding: 10px;
+
+    background: #fafbfc;
+    border: 2px solid #dfe1e4;
+    border-radius: 15px;
+    
+    outline: none;
+
+    transition: .1s;
+}
+
+div.text-box input::placeholder {
+    color: var(--color-black);
+}
+
+div.text-box input:focus, div.text-box select:focus, div.text-box input:hover, div.text-box select:hover {
+    border-color: var(--color-purple5);
+}
+
+
+div.text-box input.active, div.text-box select.active {
+    border-color: var(--color-blue1);
+}
+
+
+
+form a{
+    display: block;
+
+    max-width: 230px;
+    margin: 0 auto;
+}
+
+form button {
+    display: block;
+    margin: auto;
+
+    margin-top: 30px;
+}
+
+span.aviso {
+    display: flex; justify-content: center; align-items: center;
+    max-width: max-content; margin: auto;
+    
+    margin-top: 10px;
+    padding: 5px 10px;
+
+    border-radius: 30px;
+    border: 3px solid var(--color-yellow1);
+
+    background-color: var(--color-yellow3);
+
+    text-align: center;
+}
+
+
+
+p.aviso {
+    width: max-content;
+    padding: 2px 4px; margin-top: 15px;
+
+    font-size: medium;
+    font-weight: 700;
+    
+    /* color: var(--color-gray4); */
+    background-color: var(--color-yellow3);
+    border-left: 3px solid var(--color-yellow1);
+    border-radius: 0 5px 5px 0;
+    text-transform: uppercase;
+}

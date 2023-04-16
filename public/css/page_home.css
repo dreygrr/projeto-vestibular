@@ -1,0 +1,406 @@
+/* CSS da página inicial */
+
+
+
+h3 {
+    color: var(--color-titulo);
+}
+
+
+
+.corpo {
+    padding: 30px 0;
+    font-size: 24px;
+    line-height: 37px;
+}
+
+
+
+/* .corpo div.bloco {
+} */
+
+
+
+.corpo .bloco p.paragrafo {
+    margin: 12px 0 auto;
+
+    text-align: justify;
+}
+
+
+
+.banner-principal{
+    position: relative; display: table;
+    width: 100%; height: 75vh;
+
+    /* background: url("https://images.unsplash.com/photo-1533478684236-61e1192879e8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"); */
+    background: linear-gradient(45deg, var(--color-purple3) 0%, var(--color-blue5) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 0 0 90px 90px;
+}
+
+
+
+.banner-principal h2.titulo {
+    text-align: center;
+    font-weight: 900;
+
+    line-height: 72px;
+    font-size: 80px;
+
+    color: var(--color-white);
+}
+
+
+
+.banner-principal h4.subtitulo {
+    text-align: center;
+    font-size: 36px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+    
+    letter-spacing: 4px;
+
+    color: var(--color-white);
+}
+
+
+
+.banner-principal .elementos {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+.banner-principal .elementos .bloco {
+    margin: 30px 0;
+}
+
+
+
+.banner-principal .botoes {
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+
+.botao {
+    display: block;
+    width: 320px;
+
+    padding: 12px 24px;
+    margin: 0 10px;
+
+    text-align: center;
+    border-radius: 30px;
+    font-weight: 700;
+
+    transition: .1s;
+}
+
+.questoes {
+    background-color: var(--botao-verde-fora); color: var(--botao-verde-dentro);
+}
+.questoes:hover {
+    background: var(--botao-verde-hover);
+    box-shadow:  0 10px 40px 0 var(--botao-verde-sombra);
+}
+
+
+
+.opc_cadastro {
+    background-color: var(--botao-azul-fora); color: var(--color-white);
+}
+.opc_cadastro:hover {
+    background-color: var(--botao-azul-hover);
+    box-shadow:  0 10px 40px 0 var(--botao-azul-sombra);
+}
+
+
+
+.sobre-site {
+    font-size: 24px;
+}
+
+
+
+.corpo .intro p {
+    margin: unset;
+}
+
+.intro {
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    gap: 30px;
+    
+    font-size: 24px;
+}
+
+.intro h4 {
+    text-align: center;
+
+    font-weight: 500;
+    
+    color: var(--color-titulo);
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+.intro h4 span.marker {
+    display: block;
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: 900;
+
+    text-align: center;
+
+    background: -webkit-linear-gradient(45deg, var(--color-blue4), var(--color-blue1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border-bottom: 2px solid var(--color-blue1);
+}
+
+
+
+.intro div.content {
+    width: 100%;
+}
+
+
+
+.marker2 {
+    font-weight: 700;
+    
+    color: var(--color-blue3);
+}
+
+
+
+.intro .paragrafo .sublinhado {
+    text-decoration: underline;
+}
+
+
+
+.subbloco {
+    display: flex; justify-content: center; align-items: center;
+    width: 75%;
+    margin: auto;
+    gap: 30px;
+    padding: 30px;
+
+    text-align: justify;
+}
+
+
+
+
+
+
+
+div.subbloco.fullwidth i.icon {
+    min-width: 200px; max-width: 200px;
+    min-height: 200px; max-height: 200px;
+    /* padding: 40px; */
+    font-size: 200px;
+
+    rotate: -8deg;
+}
+
+
+
+div.subbloco.fullwidth {
+    width: 100%;
+    padding-bottom: 120px;
+
+    font-weight: 500;
+}
+div.subbloco.fullwidth div.container {
+    display: flex; justify-content: center; align-items: center;
+    width: 75%;
+    gap: 60px;
+    margin: auto;
+}
+
+
+div.subbloco.fullwidth div.container div.content {
+    display: flex; flex-direction: column;
+    gap: 15px;
+}
+
+
+
+div.subbloco.fullwidth.vests {
+    background: linear-gradient(45deg, var(--color-purple3) 0, var(--color-purple4) 100%);
+    color: var(--color-white);
+
+    border-radius: 90px 90px 0 0;
+}
+div.subbloco.fullwidth.vests i.icon.banco {
+    color: var(--color-purple1);
+}
+
+
+div.subbloco.fullwidth.vests div.content div.vestibulares {
+    display: flex; justify-content: center; align-items: center;
+    gap: 30px;
+}
+
+
+div.subbloco.fullwidth.vests div.content div.vestibulares p.vest {
+    display: flex; justify-content: center; align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+
+    font-size: medium;
+
+    letter-spacing: 2px;
+    line-height: normal;
+    text-transform: uppercase;
+
+    background-color: var(--color-white); color: var(--color-purple3);
+
+    box-shadow:  0 6px 30px 0 var(--color-white-tsp1);
+
+    
+    border-radius: 7px;
+}
+
+div.subbloco.fullwidth.vests div.content div.vestibulares p.vest i {
+    display: flex; justify-content: center; align-items: center;
+    min-width: 10px; max-width: 10px;
+    min-height: 10px; max-height: 10px;
+    font-size: 14px;
+}
+
+
+
+div.subbloco.fullwidth.contas {
+    background: linear-gradient(45deg, var(--color-light-gray) 0, var(--color-white) 100%);
+    color: var(--color-titulo);
+
+    border-radius: 90px 90px 0 0;
+
+    transform: translateY(-90px);
+}
+
+div.subbloco.fullwidth.contas div.container i {
+    color: var(--color-blue2);
+    opacity: .75;
+
+    rotate: 8deg;
+}
+
+
+div.subbloco.fullwidth.contas div.container div.content {
+    /* width: 100%; */
+}
+
+
+
+div.subbloco.fullwidth.aviso {
+    min-height: 350px;
+    padding-bottom: 30px;
+    background: linear-gradient(45deg, var(--color-blue3) 0, var(--color-blue1) 100%);
+    color: var(--color-blue7);
+
+    border-radius: 90px ;
+
+    box-shadow:  0 60px 120px 0 var(--color-blue1);
+
+    transform: translateY(-180px);
+}
+
+div.subbloco.fullwidth.aviso div.container i {
+    rotate: 270deg;
+}
+
+
+
+div.subbloco.fullwidth.feedback {
+    padding-bottom: 30px;
+    /* font-weight: 700; */
+
+    border-radius: 90px 90px 0 0;
+
+    transform: translateY(-60px);
+    
+    color: var(--color-titulo);
+}
+
+div.subbloco.fullwidth.feedback div.container i.icon {
+    rotate: 8deg;
+
+    color: var(--color-green5);
+}
+
+
+
+@media screen and (max-width: 960px) {
+    div.subbloco.fullwidth div.container {
+        position: relative;
+    }
+
+    div.subbloco.fullwidth div.container i.icon {
+        position: absolute;
+        right: 0;
+        opacity: .25;
+    }
+    div.subbloco.fullwidth.vests i.icon.banco, div.subbloco.fullwidth.contas div.container i, div.subbloco.fullwidth.aviso div.container i, div.subbloco.fullwidth.feedback div.container i.icon {
+        color: var(--color-black);
+    }
+
+
+    div.subbloco.fullwidth.vests div.content, div.subbloco.fullwidth.aviso div.content, div.subbloco.fullwidth.feedback div.content {
+        z-index: 1;
+    }
+
+
+
+    div.subbloco.fullwidth.vests div.content div.vestibulares {
+        gap: 5px;
+    }
+}
+
+
+
+@media screen and (max-width: 875px) {
+    .banner-principal .elementos .bloco {
+        margin: 12px 0;
+    }
+
+
+
+    .banner-principal .botoes {
+        flex-direction: column;
+    }
+
+    .banner-principal .opcao {
+        margin: 8px 0;
+    }
+
+
+
+    .intro {
+        flex-direction: column;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .banner-principal h2.titulo {
+        font-size: 56px;
+
+        line-height: 56px;
+    }
+}

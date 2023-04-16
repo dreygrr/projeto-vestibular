@@ -1,0 +1,185 @@
+/** Rodapé **/
+footer a {
+    color: var(--color-white);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer{
+    display: flex; justify-content: center; align-items: center;
+    
+    font-size: small; padding: 25px;
+
+    background-color: var(--color-footer); color: var(--color-white);    
+}
+
+footer .logo_ifsp_upper {
+    width: 100px;
+    margin: 0 20px;
+}
+
+footer .logo_ifsp_bottom {
+    display: none;
+}
+
+footer .container {
+    margin: 0 20px;
+}
+
+
+
+footer .palavras_chave {
+    display: flex; justify-content: center; align-items: center;
+}
+
+.palavras_chave .sep{
+    display: inline-block;
+
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+
+    background-color: var(--color-white);
+}
+
+
+
+footer .bloco {
+    text-align: center;
+    margin: 15px 0;
+}
+
+
+
+footer .feedback a {
+    padding: 6px 12px;
+
+    border: 2px solid white;
+    border-radius: 20px;
+
+    background-color: transparent; color: var(--color-white);
+
+    transition: .1s;
+}
+
+footer .feedback a:hover {
+    text-decoration: none;
+    background-color: var(--color-white); color: var(--color-black);
+}
+/*
+
+
+
+
+footer .align-c {
+    text-align: center;
+}
+
+
+
+footer .bloco-sep-25px {
+    display: block;
+    height: 25px;
+}
+
+
+
+footer p{
+    font-weight: 400;
+    color: var(--color-white);
+}
+
+
+
+footer #confirm_email{
+    color: var(--color-green);
+}
+
+footer #negate_email{
+    color: var(--color-red);
+}
+
+div.palavras_chaves{
+    text-align: center;
+}
+
+div.palavras_chaves p{
+    display: inline-block;
+}
+
+
+div.palavras_chaves div.sep{
+    display: inline-block;
+
+    width: 1px;
+    height: 10px;
+    margin: 0 5px;
+
+    background-color: var(--color-white);
+}
+
+div.contato form{
+    text-align: right;
+    color: var(--color-white);
+    max-width: 200px;
+}
+
+div.contato form p{
+    width: 100%;
+    max-width: 200px;
+}
+
+div.contato form input,
+div.contato form textarea{
+    width: 100%;
+    max-width: 200px;
+
+    margin-top: 5px;
+    padding: 5px;
+
+    border: none;
+}
+
+div.contato form textarea{
+    resize: none;
+    height: 100px;
+}
+
+div.contato form button{
+    padding: 5px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: none;
+    color: var(--color-white);
+
+    cursor: pointer;
+}
+
+div.contato form button:hover{
+    text-decoration: underline;
+}
+ */
+
+
+
+@media screen and (max-width: 960px) {
+    footer {
+        display: block;
+    }
+
+    footer .logo_ifsp_upper {
+        display: none;
+    }
+    
+    footer .logo_ifsp_bottom {
+        display: block;
+        width: 250px;
+
+        margin: 20px auto;
+    }
+}
